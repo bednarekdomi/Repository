@@ -1,0 +1,5 @@
+github-api:
+            url:
+                base: "https://api.github.com"
+                all: "https://api.github.com/users/{username}/repos"
+                one: "https://api.github.com/repos/{owner}/{repo}"
