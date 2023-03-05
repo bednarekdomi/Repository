@@ -24,7 +24,6 @@ public class RepositoryService {
     }
 
     public RepositoryDetails getOldestRepository(String userName) {
-
         return gitHubClient.getRepositories(userName).getUsersRepositories().stream().min(Comparator.comparing(RepositoryDetails::getCreatedAt))
                 .orElseThrow(UserNotFoundException::new);
     }
