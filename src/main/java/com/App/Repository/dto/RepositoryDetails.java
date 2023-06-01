@@ -13,6 +13,7 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties
+
 public class RepositoryDetails {
 
     @JsonProperty("full_name")
