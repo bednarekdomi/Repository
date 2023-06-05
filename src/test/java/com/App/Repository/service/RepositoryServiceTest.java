@@ -32,13 +32,13 @@ public class RepositoryServiceTest {
 
     @Before
     public void setUp() {
-        repositoryOne = new RepositoryDetails("user/repositoryOne", "My first repository",
+        repositoryOne = new RepositoryDetails(1L, "user/repositoryOne", "My first repository",
                 "https://github.com/user/repositoryOne", true, 3, ZonedDateTime.parse("2018-07-02T11:51:34Z"));
 
-        RepositoryDetails repositoryTwo = new RepositoryDetails("user/repositoryTwo", "My second repository",
+        RepositoryDetails repositoryTwo = new RepositoryDetails(2L, "user/repositoryTwo", "My second repository",
                 "https://github.com/user/repositoryTwo", true, 2, ZonedDateTime.parse("2019-07-02T11:51:34Z"));
 
-        RepositoryDetails repositoryThree = new RepositoryDetails("user/repositoryThree", "My third repository",
+        RepositoryDetails repositoryThree = new RepositoryDetails(3L, "user/repositoryThree", "My third repository",
                 "https://github.com/user/repositoryThree", true, 3, ZonedDateTime.parse("2017-07-02T11:51:34Z"));
 
         repositories.add(repositoryOne);
