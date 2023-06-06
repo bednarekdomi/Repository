@@ -1,7 +1,7 @@
-package com.App.Repository.service;
+package com.App.GitRepositoryApp.service;
 
-import com.App.Repository.dto.RepositoryDetails;
-import com.App.Repository.dto.User;
+import com.App.GitRepositoryApp.dto.RepositoryDetails;
+import com.App.GitRepositoryApp.dto.User;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -56,6 +56,8 @@ public class GitHubClient {
                 .bodyToFlux(RepositoryDetails.class)
                 .collectList()
                 .block();
+
+
 
         return new User(repositories);
     }

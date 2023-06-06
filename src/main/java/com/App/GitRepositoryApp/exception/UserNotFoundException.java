@@ -1,4 +1,4 @@
-package com.App.Repository.exception;
+package com.App.GitRepositoryApp.exception;
 
 public class UserNotFoundException extends RuntimeException {
 

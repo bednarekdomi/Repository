@@ -1,4 +1,4 @@
-package com.App.Repository.dto;
+package com.App.GitRepositoryApp.dto;
 
 
 import jakarta.persistence.*;

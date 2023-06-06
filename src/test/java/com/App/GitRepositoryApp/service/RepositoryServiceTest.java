@@ -1,7 +1,7 @@
-package com.App.Repository.service;
+package com.App.GitRepositoryApp.service;
 
-import com.App.Repository.dto.RepositoryDetails;
-import com.App.Repository.dto.User;
+import com.App.GitRepositoryApp.dto.RepositoryDetails;
+import com.App.GitRepositoryApp.dto.User;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

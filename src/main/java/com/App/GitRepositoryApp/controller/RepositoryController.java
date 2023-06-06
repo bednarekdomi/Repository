@@ -1,7 +1,7 @@
-package com.App.Repository.controller;
+package com.App.GitRepositoryApp.controller;
 
-import com.App.Repository.dto.RepositoryDetails;
-import com.App.Repository.service.RepositoryService;
+import com.App.GitRepositoryApp.dto.RepositoryDetails;
+import com.App.GitRepositoryApp.service.RepositoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

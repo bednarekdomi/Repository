@@ -1,8 +1,8 @@
-package com.App.Repository.service;
+package com.App.GitRepositoryApp.service;
 
-import com.App.Repository.dto.RepositoryDetails;
-import com.App.Repository.dto.User;
-import com.App.Repository.exception.UserNotFoundException;
+import com.App.GitRepositoryApp.dto.RepositoryDetails;
+import com.App.GitRepositoryApp.dto.User;
+import com.App.GitRepositoryApp.exception.UserNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
