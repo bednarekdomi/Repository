@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import java.time.ZonedDateTime;
 
@@ -16,6 +17,7 @@ import java.time.ZonedDateTime;
 @JsonIgnoreProperties
 @Entity
 public class RepositoryDetails {
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
@@ -32,5 +34,6 @@ public class RepositoryDetails {
     @JsonProperty("forks_count")
     private int forks;
     @JsonProperty("created_at")
+    @Transient
     private ZonedDateTime createdAt;
 }
